@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <!--
+
+    Hello Camper!
+
+    For now, the test suite only works in Chrome!
+    Please read the README below in the JS Editor before beginning.
+    Feel free to delete this message once you have read it.
+    Good luck and Happy Coding!
+
+    - The freeCodeCamp Team
+
+    -->
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Microverse Collaboration Project Survey</h1>
+        <p id="description">
+          Thank you for taking out time to fill this Survey as it will help us
+          improve our platform
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-type">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter Your Name Here"
+            class="form-control"
+          />
+        </div>
+        <div class="form-type">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Your Email Here"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-type">
+          <label id="number-label" for="number"
+            >Age <span class="clue">(Optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            placeholder="Enter Your Age Here"
+            min="00"
+            max="99"
+            class="form-control"
+          />
+        </div>
+        <div class="form-type">
+          <p>Sex</p>
+          <select id="dropdown" name="sex" class="form-control" required>
+            <option disabled selected value>Select your sex</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="form-type">
+          <p>Would you recommend Microverse to a friend?</p>
+          <label>
+            <input
+              name="user-recomment"
+              value="Definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />
+            Definitely </label
+          ><br />
+          <label>
+            <input
+              name="user-recomment"
+              value="Maybe"
+              type="radio"
+              class="input-radio"
+            />
+            Maybe </label
+          ><br />
+          <label>
+            <input
+              name="user-recomment"
+              value="Not sure"
+              type="radio"
+              class="input-radio"
+            />
+            Not sure </label
+          ><br />
+        </div>
+        <div class="form-type">
+          <p>
+            Which would you like us include to our lists of programs?
+            <span class="clue">(Check all boxes that apply)</span>
+          </p>
+          <label>
+            <input
+              name="prefer"
+              value="Back-end programs"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Back-end Programs </label
+          ><br />
+          <label>
+            <input
+              name="prefer"
+              value="Data Analysis"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Data Analysis </label
+          ><br />
+          <label>
+            <input
+              name="prefer"
+              value="Virtual Assistance"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Virtual Assistance </label
+          ><br />
+          <label>
+            <input
+              name="prefer"
+              value="Data Science"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Data Science </label
+          ><br />
+        </div>
+        <div class="form-type">
+          <p>Any additional comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comments here..."
+          ></textarea>
+        </div>
+        <div class="form-type">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
